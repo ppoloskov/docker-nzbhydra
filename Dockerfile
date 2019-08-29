@@ -3,6 +3,9 @@ FROM alpine:3.10
 ENV PUID="1001"
 ENV PGID="1001"
 
+# Nzbhydra repo
+ENV GITHUB_REPO "theotherp/nzbhydra2"
+
 WORKDIR /opt/nzbhydra2
 
 RUN apk add --no-cache curl openjdk9-jre-headless unzip && \
